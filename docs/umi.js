@@ -35044,10 +35044,7 @@
         : (0, ro.render)(t, n, o);
     }
     function Mo() {
-      var e = [
-        { path: '/', component: n(1997).Z, exact: !0 },
-        { path: '/simple', component: n(1997).Z, exact: !0 },
-      ];
+      var e = [{ path: '/simple', component: n(1997).Z, exact: !0 }];
       return (
         U.applyPlugins({
           key: 'patchRoutes',

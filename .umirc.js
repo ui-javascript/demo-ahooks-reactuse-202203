@@ -6,10 +6,10 @@ const { CONFIG } = require('./mpa.config');
 const mpaEntries = getEntry(CONFIG.entry);
 
 const routes = [
-  {
-    path: '/',
-    component: mpaEntries.entry[0].component,
-  },
+  // {
+  //   path: '/',
+  //   component: mpaEntries.entry[0].component,
+  // },
   ...mpaEntries.entry,
 ];
 console.log(routes);
@@ -29,8 +29,8 @@ export default defineConfig({
   //   },
   // ],
   routes,
-  publicPath: '/demo-ahooks-reactuse-202203/',
-  // publicPath: './',
+  // publicPath: '/demo-ahooks-reactuse-202203/',
+  publicPath: './',
   outputPath: 'docs',
   mfsu: {
     //   // production: { output: '.mfsu-production' }
