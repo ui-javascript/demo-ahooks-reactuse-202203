@@ -39,7 +39,7 @@ export default defineConfig({
   },
   // fastRefresh: {},
 
-  mpa: {},
+  // mpa: {},
   // exportStatic: {},
 
   // chainWebpack(config, { env, webpack, createCSSRule }) {
