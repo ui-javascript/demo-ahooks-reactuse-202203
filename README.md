@@ -1,5 +1,6 @@
 # umi project
 
+- @ide https://uijavascript-demoahooksr-0bb51kxeokk.ws-eu38.gitpod.io/
 
 # 常见问题 @bug
 
