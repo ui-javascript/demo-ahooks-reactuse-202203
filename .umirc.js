@@ -5,13 +5,15 @@ const { CONFIG } = require('./mpa.config');
 
 const mpaEntries = getEntry(CONFIG.entry);
 
-const routes = [
-  // {
-  //   path: '/',
-  //   component: mpaEntries.entry[0].component,
-  // },
-  ...mpaEntries.entry,
-];
+const routes = getEntry.hasIndex
+  ? mpaEntries.entry
+  : [
+      {
+        path: '/',
+        component: mpaEntries.entry[0].component,
+      },
+      ...mpaEntries.entry,
+    ];
 console.log(routes);
 
 export default defineConfig({
@@ -37,7 +39,7 @@ export default defineConfig({
   },
   // fastRefresh: {},
 
-  // mpa: {},
+  mpa: {},
   // exportStatic: {},
 
   // chainWebpack(config, { env, webpack, createCSSRule }) {
