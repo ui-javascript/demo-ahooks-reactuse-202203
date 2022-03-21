@@ -10994,6 +10994,18 @@
         }
         r.render((0, o.jsx)(i, {}), document.getElementById('root'));
       },
+      8438: function (e, t, n) {
+        'use strict';
+        n(7294);
+        var r = n(3935),
+          o = n(5893);
+        function i() {
+          return (0, o.jsx)('div', {
+            children: (0, o.jsx)('h1', { children: 'simple2' }),
+          });
+        }
+        r.render((0, o.jsx)(i, {}), document.getElementById('root'));
+      },
       9826: function (e, t, n) {
         'use strict';
         n(4792);
@@ -32672,6 +32684,7 @@
         { path: '/index.html', component: n(1997).default, exact: !0 },
         { path: '/', component: n(1997).default, exact: !0 },
         { path: '/simple.html', component: n(1997).default, exact: !0 },
+        { path: '/simple2.html', component: n(8438).default, exact: !0 },
       ];
       return (
         Z.applyPlugins({
